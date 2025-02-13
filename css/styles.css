@@ -118,6 +118,37 @@ body {
     transform: scale(1.1);
 }
 
+.swiper-container {
+    width: 200%;
+    max-width: 600px;
+    margin: auto;
+}
+.swiper-slide {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    size: 10em;
+}
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.testimonial-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+.testimonial-text {
+    font-size: 14px;
+    color: #555555;
+}
+
 footer {
     background: black;
     padding: 60px;

@@ -29,24 +29,114 @@
     </div>
 
     <section id="courses">
-        <h2 class="section-title">Choose your way</h2>
-        <div class="course-list">
-          
-            <div class="course-item">
-                <h3>Individual Classes</h3>
-                <p>Learn Spanish faster with personalized online classes</p>
-                <a href="#" class="btn">MORE INFO</a>
+      <h2 class="section-title">Choose your way</h2>
+      <div class="course-list">
+          <div class="course-item">
+              <h3>Individual Classes</h3>
+              <img src="/media/img/img1.png" alt="img">
+              <p>Learn Spanish faster with personalized online classes</p>
+              <a href="#" class="btn">MORE INFO</a>
+          </div>
+          <div class="course-item">
+              <h3>Conversation Classes</h3>
+              <img src="/media/img/img2.png" alt="img">
+              <p>Improve your fluency in Spanish</p>
+              <a href="#" class="btn">MORE INFO</a>
+          </div>
+          <div class="course-item">
+              <h3>Group Classes</h3>
+              <img src="/media/img/img3.png" alt="img">
+              <p>Practice Spanish in an interactive group setting</p>
+              <a href="#" class="btn">MORE INFO</a>
+          </div>
+          <div class="course-item">
+            <h3>Gramma Lessons</h3>
+            <img src="/media/img/img4.png" alt="img">
+            <p>Perfect your Spanish with practical grammar lessons</p>
+            <a href="#" class="btn">MORE INFO</a>
+        </div>
+      </div>
+  </section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+        .swiper-container {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .swiper-slide {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .testimonial-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .testimonial-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .testimonial-text {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/80" alt="Person 1" class="testimonial-photo">
+                <div class="testimonial-name">John Doe</div>
+                <p class="testimonial-text">"Amazing lessons! I improved my Spanish quickly!"</p>
             </div>
-            <div class="course-item">
-                <h3>Conversation Classes</h3>
-                <p>Improve your fluency in Spanish</p>
-                <a href="#" class="btn">MORE INFO</a>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/80" alt="Person 2" class="testimonial-photo">
+                <div class="testimonial-name">Jane Smith</div>
+                <p class="testimonial-text">"Clear explanations and great examples. Highly recommended!"</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/80" alt="Person 3" class="testimonial-photo">
+                <div class="testimonial-name">Carlos Gómez</div>
+                <p class="testimonial-text">"Learning Spanish has never been easier. Excellent!"</p>
             </div>
         </div>
-        
-</div>
-        
-    </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
     <footer>
         <div class="footer-container">
