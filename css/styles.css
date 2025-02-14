@@ -46,7 +46,7 @@ body {
 }
 
 
-.text-overlay {
+.title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,15 +54,17 @@ body {
     color: white;
     font-size: 8rem;
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 20px 160px;
+    background: rgba(62, 255, 136, 0.2);
+    padding: 40px 60px;
     border-radius: 20px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .subtitle {
-    font-size: .5em;
+    font-size: .3em;
     font-weight: lighter;
+    color:white;
 }
 #courses {
     padding: 100px 0;
@@ -204,6 +206,7 @@ footer {
     font-size: 22px;
     width: 300px;
     text-align: center;
+    align-items: last baseline;
 }
 
 .subscribe button {
@@ -221,6 +224,10 @@ footer {
     background: #ccc;
 }
 
-.logo img {
-    width: 300px;
+.logo-footer {
+    font-size: 1.5em;
+    width: 150px;   
+    width: 150px;
+    color:white;
+    align-items:end;
 }
