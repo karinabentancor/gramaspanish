@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your first class</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="radio"], input[type="date"], input[type="text"], input[type="email"], input[type="tel"], select {
+            margin: 10px 0;
+            width: 100%;
+            padding: 8px;
+        }
+        select {
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: rgb(20, 183, 145);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(20, 183, 145);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Start your adventure!</h2>
+        <form action="#" method="post">
+            
+
+               <div class="form-group">
+                <label>Choose your class type:</label><br>
+                <input type="radio" id="group" name="class_type" value="group">
+                <label for="group">Group class</label><br>
+                <input type="radio" id="private" name="class_type" value="private">
+                <label for="private">Private class</label><br>
+            </div>
+
+            <div class="form-group">
+                <label for="class_date">Select your class date:</label><br>
+                <input type="date" id="class_date" name="class_date" required><br>
+            </div>
+
+            <div class="form-group">
+                <label for="class_time">Choose your class time:</label><br>
+                <select id="class_time" name="class_time" required>
+                    <option value="10:00">10:00 AM - 11:00 AM</option>
+                    <option value="11:00">11:00 AM - 12:00 PM</option>
+                    <option value="12:00">12:00 PM - 1:00 PM</option>
+                    <option value="1:00">1:00 PM - 2:00 PM</option>
+                    <option value="2:00">2:00 PM - 3:00 PM</option>
+                    <option value="3:00">3:00 PM - 4:00 PM</option>
+                    <option value="4:00">4:00 PM - 5:00 PM</option>
+                    <option value="5:00">5:00 PM - 6:00 PM</option>
+                    <option value="6:00">6:00 PM - 7:00 PM</option>
+                </select><br>
+            </div>
+
+            <div class="form-group">
+                <label for="timezone">Select your timezone:</label><br>
+                <select id="timezone" name="timezone" required>
+                    <option value="UTC-12:00">UTC-12:00</option>
+                    <option value="UTC-11:00">UTC-11:00</option>
+                    <option value="UTC-10:00">UTC-10:00</option>
+                    <option value="UTC-09:00">UTC-09:00</option>
+                    <option value="UTC-08:00">UTC-08:00</option>
+                    <option value="UTC-07:00">UTC-07:00</option>
+                    <option value="UTC-06:00">UTC-06:00</option>
+                    <option value="UTC-05:00">UTC-05:00</option>
+                    <option value="UTC-04:00">UTC-04:00</option>
+                    <option value="UTC-03:00">UTC-03:00</option>
+                    <option value="UTC-02:00">UTC-02:00</option>
+                    <option value="UTC-01:00">UTC-01:00</option>
+                    <option value="UTC+00:00">UTC+00:00</option>
+                    <option value="UTC+01:00">UTC+01:00</option>
+                    <option value="UTC+02:00">UTC+02:00</option>
+                    <option value="UTC+03:00">UTC+03:00</option>
+                    <option value="UTC+04:00">UTC+04:00</option>
+                    <option value="UTC+05:00">UTC+05:00</option>
+                    <option value="UTC+06:00">UTC+06:00</option>
+                    <option value="UTC+07:00">UTC+07:00</option>
+                    <option value="UTC+08:00">UTC+08:00</option>
+                    <option value="UTC+09:00">UTC+09:00</option>
+                    <option value="UTC+10:00">UTC+10:00</option>
+                    <option value="UTC+11:00">UTC+11:00</option>
+                    <option value="UTC+12:00">UTC+12:00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+         
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -159,6 +159,31 @@ body {
     font-family:Georgia, 'Times New Roman', Times, sans-serif;
 }
 
+.free-trial-class {
+    background: rgb(20, 183, 145);
+    color: white;
+    padding: 30px 30px;
+    margin-top: 1em;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.btn-schedule {
+    background: white;
+    color: rgb(20, 183, 145);
+    padding: 20px 40px;
+    border-radius: 56px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 600px;
+}
+
+.btn-schedule:hover{
+    background: black;
+    color: white;
+}
 footer {
     background: black;
     padding: 15px;
