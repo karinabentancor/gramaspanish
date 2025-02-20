@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GЯAMA SPANISH</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,6 +16,21 @@
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <div class="language-selector">
+            <div class="selected-language">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English">
+            <div class="dropdown">
+                <a href="#" onclick="changeLanguage('en')">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                </a>
+                <a href="#" onclick="changeLanguage('es')">
+                    <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
+                </a>
+                <a href="#" onclick="changeLanguage('ru')">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
+                </a>
+            </div>
+        </div>
     </nav>
 
     <div class="video-container">
