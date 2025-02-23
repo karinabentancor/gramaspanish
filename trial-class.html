@@ -3,45 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book your first class</title>
+    <title>GЯAMA SPANISH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .form-container {
-            max-width: 500px;
-            margin: auto;
-        }
-        label {
-            font-weight: bold;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        input[type="radio"], input[type="date"], input[type="text"], input[type="email"], input[type="tel"], select {
-            margin: 10px 0;
-            width: 100%;
-            padding: 8px;
-        }
-        select {
-            margin-top: 10px;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: rgb(20, 183, 145);
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: rgb(20, 183, 145);
-            color: black;
-        }
-    </style>
+</head>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="language-selector">
+            <div class="selected-language">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English">
+            <div class="dropdown">
+                <a href="#" onclick="changeLanguage('en')">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                </a>
+                <a href="#" onclick="changeLanguage('es')">
+                    <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
+                </a>
+                <a href="#" onclick="changeLanguage('ru')">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <p>Our trial classes are completely free and designed to give you a first introduction to the teacher and our methodology. In this session, you’ll have the chance to get to know us, discuss your learning goals, and ask any questions you may have about our classes.
 
@@ -129,6 +124,27 @@
             <button type="submit">Book Now</button>
         </form>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="media/svg/envelope.svg" alt="Email"></a>
+                <a href="#"><img src="media/svg/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="media/svg/telegram.svg" alt="Telegram"></a>
+                <a href="#"><img src="media/svg/whatsapp.svg" alt="Whatsapp"></a>
+            </div>
+                <div class="right-col">
+            <div class="logo-footer">
+                <div class="logo-footer">GЯAMA SPANISH
+            </div>
+       
+            <div class="subscribe">
+                <input type="email" placeholder="Enter your email to stay updated">
+                <button>Join us</button>
+            </div>
+        </div>
+    </footer>
+    
     <script src="/js/script.js"></script>
 
 </body>

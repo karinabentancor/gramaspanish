@@ -4,19 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GЯAMA SPANISH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/class.css">
-    
 </head>
 <body>
-    <div id="navbar"></div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="language-selector">
+            <div class="selected-language">
+                <img src="https://flagcdn.com/w40/gb.png" alt="English">
+            <div class="dropdown">
+                <a href="#" onclick="changeLanguage('en')">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                </a>
+                <a href="#" onclick="changeLanguage('es')">
+                    <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
+                </a>
+                <a href="#" onclick="changeLanguage('ru')">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
+                </a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <h1>Group Classes</h1>
         <p>Our group classes are perfect for those who enjoy learning in the company of others, sharing the experience with fellow students, and getting to know new people and cultures. In a dynamic and collaborative environment, you’ll improve your Spanish through interaction, idea exchange, and constant practice.
         Learning in a group will enrich your experience with different perspectives, help you discover new approaches, and keep you motivated with the support of your classmates.</p>
     </div>
-
-    <div class="footer-container">
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="media/svg/envelope.svg" alt="Email"></a>
+                <a href="#"><img src="media/svg/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="media/svg/telegram.svg" alt="Telegram"></a>
+                <a href="#"><img src="media/svg/whatsapp.svg" alt="Whatsapp"></a>
+            </div>
+                <div class="right-col">
+            <div class="logo-footer">
+                <div class="logo-footer">GЯAMA SPANISH
+            </div>
+       
+            <div class="subscribe">
+                <input type="email" placeholder="Enter your email to stay updated">
+                <button>Join us</button>
+            </div>
+        </div>
+    </footer>
+    
     <script src="/js/script.js"></script>
 
 </body>
