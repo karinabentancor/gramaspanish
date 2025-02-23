@@ -43,11 +43,13 @@ body {
     text-decoration: none;
     font-family: "Nunito", serif;
     font-size: 18px;
-  
     transition: color 0.3s ease;
     letter-spacing: 0.1em;
 }
 
+.navbar ul li a:hover {
+    color: rgb(157, 218, 204);
+}
 .language-selector {
     position: relative;
     margin-right: 20px;
