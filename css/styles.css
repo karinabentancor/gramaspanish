@@ -19,7 +19,7 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    background: rgb(20, 183, 145);
+    background: rgb(121, 192, 176);
     padding: 8px 0;
     text-align: center;
     z-index: 1000;
@@ -243,10 +243,11 @@ body {
 }
 
 .free-trial-class {
-    background: rgb(20, 183, 145);
+    background: rgb(213, 233, 111);
     color: white;
     padding: 30px 30px;
     margin-top: 1em;
+    margin-bottom: 1em;
     text-decoration: none;
     font-size: 2.5em;
     font-weight: bold;
@@ -255,7 +256,7 @@ body {
 
 .btn-schedule {
     background: white;
-    color: rgb(20, 183, 145);
+    color:#5e5e5e;
     padding: 20px 40px;
     border-radius: 56px 2px;
     font-size: 20px;
@@ -263,16 +264,18 @@ body {
     text-decoration: none;
     margin:10em;
     margin-top: 3em;
+    border: 3px white;
 }
 
 .btn-schedule:hover {
-    background: black;
-    color: white;
+    background: rgb(207, 239, 49);
+    color: #5e5e5e;
+    border: white;
 }
 
 footer {
-    background: black;
-    padding: 15px;
+    background:rgb(121, 192, 176);
+    padding: 6px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -292,17 +295,21 @@ footer {
     display: flex;
     gap: 40px;
     padding:1em;
+    
 }
 
 .social-icons img {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     transition: transform 0.3s ease;
     filter: invert(1);
+    
+    
 }
 
 .social-icons img:hover {
     transform: scale(1.2);
+    
 }
 
 .right-col {
@@ -312,9 +319,9 @@ footer {
 .subscribe {
     align-content: right;
     display: flex;
-    gap: 200px;
+    gap: 100px;
     font-size: 14px;
-    margin-top: 0.7em;
+    margin-top: 0;
     margin-block-end: auto;
     gap: 30px;   
 }
@@ -323,25 +330,26 @@ footer {
     padding: 15px;
     border: none;
     border-radius: 5px;
-    min-width: 300px; 
+    min-width: 250px; 
     width: auto; 
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .subscribe button {
     background: white;
-    color: black;
+    color: #5e5e5e;
     border: none;
-    padding: 15px 15px;
+    padding: 20px 25px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .subscribe button:hover {
     background:  rgb(20, 183, 145);
-    color:#000000;
+    color:#ffffff;
 }
 
 .right-col {
@@ -355,7 +363,7 @@ footer {
     font-size: 1.5em;
     width: 150px;   
     width: 150px;
-    color:white;
+    color: white;
     align-items:right;
     margin bottom: 0;
     padding: 0.2em;

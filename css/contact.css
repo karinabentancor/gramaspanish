@@ -5,18 +5,17 @@ body {
     color: #333;
 }
 
-/* Container for the Contact Page */
 .container {
-    padding: 50px 15px;
+    padding: 250px 15px;
 }
 
-/* Row Styles */
+
 .row {
     display: flex;
     justify-content: space-between;
 }
 
-/* Left Column (Social Media - Black Background) */
+
 .col-md-6:first-child {
     background-color: #000; /* Black Background */
     color: #fff; /* White Text */
@@ -57,9 +56,8 @@ body {
     height: 100%;
 }
 
-/* Right Column (Contact Form - White Background) */
 .col-md-6:last-child {
-    background-color: #fff; /* White Background */
+    background-color: #fff; 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
