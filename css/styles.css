@@ -16,10 +16,11 @@ body {
 }
 
 .navbar {
-    position: sticky;
+    position:fixed;
     top: 0;
     width: 100%;
-    background: rgb(121, 192, 176);
+    background-color: rgb(20, 183, 145, 0.4);
+    backdrop-filter: blur(10px); 
     padding: 8px 0;
     text-align: center;
     z-index: 1000;
@@ -27,6 +28,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 
 .navbar ul {
     list-style: none;
@@ -39,16 +41,19 @@ body {
 }
 
 .navbar ul li a {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-decoration: none;
     font-family: "Nunito", serif;
     font-size: 18px;
     transition: color 0.3s ease;
     letter-spacing: 0.1em;
+    
 }
 
 .navbar ul li a:hover {
-    color: rgb(157, 218, 204);
+    color: #2f2f2f;
+    font-weight: bolder;
+    background-color: rgb(20, 183, 145);
 }
 .language-selector {
     position: relative;
@@ -242,8 +247,8 @@ body {
 }
 
 .free-trial-class {
-    background: rgb(213, 233, 111);
-    color:#5e5e5e;
+    background: rgb(20, 183, 145);
+    color:#ffffff;
     padding: 30px 30px;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -267,9 +272,9 @@ body {
 }
 
 .btn-schedule:hover {
-    background: rgb(207, 239, 49);
-    color: #5e5e5e;
-    border: 3px solid #5e5e5e;
+    background: rgb(20, 183, 145);
+    color: white;
+    border: 3px solid white;
 }
 
 footer {
@@ -335,8 +340,8 @@ footer {
 }
 
 .subscribe button {
-    background: white;
-    color: #5e5e5e;
+    background: rgb(20, 183, 145);
+    color: white;
     padding: 20px 40px;
     border-radius: 56px 2px;
     font-size: 20px;
