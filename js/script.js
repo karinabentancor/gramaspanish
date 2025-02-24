@@ -1,4 +1,4 @@
-     function loadHTML(id, filename) {
+function loadHTML(id, filename) {
         fetch(filename)
             .then(response => response.text())
             .then(data => {
