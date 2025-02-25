@@ -105,17 +105,19 @@ body {
 
 .title {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 9rem;
     font-weight: bold;
-    padding: 40px 60px;
-    border-radius: 20px;
+    padding: 60px 50px;
+    border-radius: 30px;
+    margin-top: 40px;
     text-align: center;
     white-space: nowrap;
     font-family: "Nunito", serif;
+    background-color: rgba(61, 61, 61, 0.4);
 }
 
 .subtitle {
@@ -124,6 +126,28 @@ body {
     font-weight: lighter;
     color:white;
 }
+.hero-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 20px 40px;
+    background-color: transparent; 
+    color: white;
+    text-decoration: none;
+    border: 2px solid white; 
+    border-radius: 56px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.hero-btn:visited {
+    color: white; 
+    transform: none; 
+}
 
 #courses {
     padding: 100px 0;
@@ -131,13 +155,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+   
 }
 
 .section-title {
     text-align: center;
-    font-size: 7em;
+    font-size: 8em;
+    margin-top:0;
     margin-bottom: 40px;
     font-family: "Crimson Text", serif;
+    color: rgb(20, 183, 145);
 }
 
 .course-list {
@@ -153,7 +180,7 @@ body {
     background: rgba(0, 200, 153, 0.1);
     color: black;
     border: 3px solid #ddd;
-    border-radius: 8px;
+    border-radius: 36px;
     width: 100%;
     max-width: 350px;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
@@ -167,7 +194,7 @@ body {
     display: inline-block;
     margin: 20px 0;
     padding: 20px 40px;
-    background-color: #000000;
+    background-color:#5e5e5e;
     color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 56px 2px;
@@ -176,15 +203,31 @@ body {
     margin-top: 3em;
 }
 
+
 .course-item:hover {
     background-color: rgb(20, 183, 145);
     transform: scale(1.1);
 }
 
 .course-item .btn:hover {
-    background-color: #2f2f2f;
+    background-color: rgb(20, 183, 145);
     color:  rgb(255, 255, 255);
     transform: scale(1.1);
+}
+
+.course-item:nth-child(odd) {
+    background-color: rgb(20, 183, 145);
+    color: white;
+}
+
+.course-item:nth-child(even) {
+    background-color: rgb(121, 192, 176);
+    color: white;
+}
+
+.course-item:hover {
+    transform: scale(1.1);
+    background-color: grey;
 }
 
 .swiper-container {
