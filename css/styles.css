@@ -1,4 +1,89 @@
-* {
+.spectral-extralight {
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .spectral-light {
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .spectral-regular {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .spectral-medium {
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .spectral-semibold {
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .spectral-bold {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .spectral-extrabold {
+    font-family: "Spectral", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .spectral-extralight-italic {
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .spectral-light-italic {
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .spectral-regular-italic {
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .spectral-medium-italic {
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .spectral-semibold-italic {
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .spectral-bold-italic {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .spectral-extrabold-italic {
+    font-family: "Spectral", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +92,7 @@ html {
     font-size: 16px;
 }
 body {
-    font-family:"Nunito", serif;
+    font-family:  "Spectral", serif;
     background-color: #ffffff;
     color: #2f2f2f;
     font-size: 15px;
@@ -90,32 +175,37 @@ body {
    
 }
 .title {
-    position: absolute;
-    top: 55%;
+    position:absolute;
+    display: flex; 
+    flex-direction: column;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: bold;
-    padding: 30px 30px 30px 30px;
+    padding: 0.5em;
     border-radius: 30px;
-    margin-top: 0px;
+    margin-top: 0.2em;
     margin-bottom: 0px;
+    line-height: 1;
     text-align: center;
     white-space: nowrap;
-    font-family: "Nunito", serif;
+    font-family:  "Spectral", serif;
     background-color: rgba(61, 61, 61, 0.4);
 }
 .subtitle {
-    font-family: "Crimson Text", serif;
+    font-family:  "Spectral", serif;
     font-size: 0.5em;
     font-weight: lighter;
     color:white;
     margin: 0;
+    padding: 0;
 }
 .hero-btn {
-    display: inline-block;
+    display:absolute;
     margin: 0; 
+    margin-top: 2em;
     padding: 20px 40px;
     background-color: transparent;
     color: white;
@@ -125,6 +215,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
+    font-family: "Nunito", serif;
 }
 
 .hero-btn:hover {
@@ -140,14 +231,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-   
 }
 .section-title-home {
     text-align: center;
     font-size: 8em;
     margin-top:0;
     margin-bottom: 40px;
-    font-family: "Crimson Text", serif;
+    font-family:  "Spectral", serif;
     color: rgb(20, 183, 145);
 }
 
@@ -156,7 +246,7 @@ body {
     font-size: 6em;
     margin-top:0;
     margin-bottom: 40px;
-    font-family: "Crimson Text", serif;
+   font-family:  "Spectral", serif;
     color: rgb(20, 183, 145);
 }
 .course-list {
@@ -191,6 +281,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-top: 3em;
+    font-family: "Nunito", serif;
 }
 .course-item:hover {
     background-color: rgb(20, 183, 145);
@@ -267,6 +358,7 @@ body {
     margin:10em;
     margin-top: 3em;
     border: 3px solid white;
+    font-family: "Nunito", serif;
 }
 .btn-schedule:hover {
     background: rgb(20, 183, 145);
@@ -355,13 +447,14 @@ footer {
 
 .logo-footer {
     font-size: 1.5em;
+    font-family:  "Spectral", serif;
     width: 150px;   
     width: 150px;
     color: white;
     align-items:right;
     margin bottom: 0;
     padding: 0.2em;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     line-height: 0.9;
 }
 
