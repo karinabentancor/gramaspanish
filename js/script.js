@@ -22,3 +22,10 @@ function loadHTML(id, filename) {
             prevEl: '.swiper-button-prev',
         },
     });
+
+
+    document.querySelectorAll(".navbar ul li a").forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add("active");
+        }
+    });

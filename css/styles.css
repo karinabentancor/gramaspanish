@@ -135,6 +135,12 @@ body {
     font-weight: bolder;
     background-color:rgb(121, 192, 176);
 }
+.navbar ul li a.active {
+    color: whitesmoke;
+    font-weight: bolder;
+    background-color: rgb(121, 192, 176);
+}
+
 .language-selector {
     position:sticky;
     align-items:self-end;
@@ -254,6 +260,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     justify-content: center;
+    font-family: "Spectral", serif;
     max-width: 800px;
     margin: auto;
 }
@@ -285,7 +292,7 @@ body {
     font-family: "Nunito", serif;
 }
 .course-item:hover {
-    background-color: rgb(20, 183, 145);
+    background-color::rgb(209, 209, 209, 0.4);
     transform: scale(1.1);
 }
 .course-item .btn:hover {
