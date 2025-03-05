@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GЯAMA SPANISH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/test-level.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="courses.html" class="active">COURSES</a></li>
+            <li><a href="about.html" >ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="language-selector">
+            <div class="dropdown">
+                <a href="#" onclick="changeLanguage('en')">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                </a>
+                <a href="#" onclick="changeLanguage('es')">
+                    <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
+                </a>
+                <a href="#" onclick="changeLanguage('ru')">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
+                </a>
+            </div>
+        </div>
+    </nav>
+ 
+        <h1> Let's test you level of Spanish</h1>
+    
+
+        <div class="test-container">
+            <p>Answer the following questions to test your level of Spanish:</p>
+        
+            <form id="spanish-test" onsubmit="return checkAnswers(event)">
+                <div class="question">
+                    <p>1. What does "Hola" mean?</p>
+                    <label>
+                        <input type="radio" name="q1" value="b"> Hello
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="a"> Good morning
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Goodbye
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="d"> Thank you
+                    </label>
+                </div>
+            
+                <div class="question">
+                    <p>2. How do you say "I am hungry" in Spanish?</p>
+                    <label>
+                        <input type="radio" name="q2" value="a"> Estoy cansado
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Tengo hambre
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> Soy feliz
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="d"> Estoy triste
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>3. What is the correct translation of "Where are you from?"</p>
+                    <label>
+                        <input type="radio" name="q3" value="b"> ¿De dónde eres?
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="a"> ¿Dónde estás?
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> ¿Qué hora es?
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="d"> ¿Cómo te llamas?
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>4. Which of the following is the correct Spanish translation for "I speak Spanish"?</p>
+                    <label>
+                        <input type="radio" name="q4" value="b"> Yo hablo español
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="a"> Yo hablo inglés
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> Yo no hablo español
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="d"> Tú hablas español
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>5. Which sentence is correct?</p>
+                    <label>
+                        <input type="radio" name="q5" value="b"> Mi hermana es profesora.
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="a"> Mi hermana profesor.
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> Yo hermana es profesora.
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d"> Mi hermana es profesoro.
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>6. How do you say "What time is it?" in Spanish?</p>
+                    <label>
+                        <input type="radio" name="q6" value="a"> ¿Qué hora es?
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="b"> ¿Cuántos años tienes?
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="c"> ¿Cómo estás?
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="d"> ¿De dónde eres?
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>7. What does "Darse cuenta de" mean?</p>
+                    <label>
+                        <input type="radio" name="q7" value="a"> To realize
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b"> To forget
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c"> To deny
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="d"> To inform
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>8. Which of these is the correct past tense form of "I ate"?</p>
+                    <label>
+                        <input type="radio" name="q8" value="a"> Yo comer
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="b"> Yo comí
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="c"> Yo comíste
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="d"> Yo comía
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>9. Which word means "rain"?</p>
+                    <label>
+                        <input type="radio" name="q9" value="a"> Lluvia
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="b"> Sol
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="c"> Nieve
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="d"> Viento
+                    </label>
+                </div>
+    
+                <div class="question">
+                    <p>10. What is the correct translation of "She is going to the supermarket"?</p>
+                    <label>
+                        <input type="radio" name="q10" value="a"> Ella va al supermercado
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="b"> Ella va en el supermercado
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="c"> Ella va del supermercado
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="d"> Ella va al supermercadó
+                    </label>
+                </div>
+    
+                <div class="submit-btn">
+                    <button type="submit">Submit Test</button>
+                </div>
+            </form>
+    
+            <div id="result" class="result" style="display:none;">
+                <h2>Your Result</h2>
+                <p id="score">You scored <span id="score-value">0</span> out of 10.</p>
+                <p id="level">Your Spanish level is: <span id="level-value"></span></p>
+            </div>
+        </div>
+    
+    
+    
+
+   
+    <div class="free-trial-class">
+        <h4> Schedule your free trial class</h4>
+        <a href="trial-class.html" class="btn-schedule">BOOK NOW</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><img src="media/svg/envelope.svg" alt="Email"></a>
+                <a href="#"><img src="media/svg/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="media/svg/telegram.svg" alt="Telegram"></a>
+                <a href="#"><img src="media/svg/whatsapp.svg" alt="Whatsapp"></a>
+            </div>
+                <div class="right-col">
+            <div class="logo-footer">
+                <div class="logo-footer">GЯAMA SPANISH
+            </div>
+       
+            <div class="subscribe">
+                <input type="email" placeholder="Enter your email to stay updated">
+                <button>Join us</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

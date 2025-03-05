@@ -217,11 +217,13 @@ body {
     color: white;
     text-decoration: none;
     border: 2px solid white;
-    border-radius: 56px 2px;
+    border-radius: 56px 3px;
     font-size: 20px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     font-family: "Nunito", serif;
+    width: 300px;
+    align-self: center;
 }
 
 .hero-btn:hover {
