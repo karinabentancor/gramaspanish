@@ -1,8 +1,11 @@
-/* General Body and Layout Styles */
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url(/media/img/contact2.jpg); 
+    background-size: cover;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
 }
 
 .container {
