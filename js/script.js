@@ -62,3 +62,16 @@ document.querySelectorAll(".navbar ul li a").forEach(link => {
         link.classList.add("active");
     }
 });
+
+
+function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    dropdownMenu.classList.toggle('show');
+}
+
+function changeLanguage(language, flagUrl) {
+    document.getElementById('selected-flag').src = flagUrl;
+    
+}
+
+document.querySelector('.dropdown-toggle').addEventListener('click', toggleDropdown);
