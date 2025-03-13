@@ -12,23 +12,61 @@ body {
     padding: 250px 15px;
 }
 
+.form-outline {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input.form-control,
+textarea.form-control {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus + .form-label,
+textarea.form-control:focus + .form-label,
+input.form-control:not(:placeholder-shown) + .form-label,
+textarea.form-control:not(:placeholder-shown) + .form-label {
+    top: 10px;
+    font-size: 0.85rem;
+    color: rgb(20, 183, 145);
+}
+
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+    color: transparent;
+}
 
 .row {
     display: flex;
     justify-content: space-between;
 }
 
-
 .col-md-6:first-child {
-    background-color: #000; /* Black Background */
-    color: #fff; /* White Text */
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .col-md-6:first-child h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -52,6 +90,7 @@ body {
 
 .social-icons a:hover {
     transform: scale(1.1);
+    color:rgb(20, 183, 145);
 }
 
 .social-icons img {
@@ -60,7 +99,7 @@ body {
 }
 
 .col-md-6:last-child {
-    background-color: #fff; 
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -86,12 +125,12 @@ form .form-control {
 }
 
 form .form-control:focus {
-    border-color: #000;
+    border-color: #333;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 form .btn {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     border: none;
     padding: 12px 25px;
@@ -102,6 +141,5 @@ form .btn {
 }
 
 form .btn:hover {
-    background-color: #333;
+    background-color: rgb(20, 183, 145);
 }
-
