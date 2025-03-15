@@ -1,118 +1,65 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #f4f4f4;
     color: #333;
-    background-image: url(/media/img/contact2.jpg); 
-    background-size: cover;  
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-}
-
-.container {
-    padding: 250px 15px;
-}
-
-.form-outline {
+    background-image: url('https://raw.githubusercontent.com/karinabentancor/gramaspanish/master/media/img/contact2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
-    margin-bottom: 20px;
 }
 
-input.form-control,
-textarea.form-control {
-    font-size: 1rem;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-.form-label {
+body::after {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    font-size: 1rem;
-    color: #aaa;
-    pointer-events: none;
-    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(50px);
+    z-index: -1;
 }
 
-input.form-control:focus + .form-label,
-textarea.form-control:focus + .form-label,
-input.form-control:not(:placeholder-shown) + .form-label,
-textarea.form-control:not(:placeholder-shown) + .form-label {
-    top: 10px;
-    font-size: 0.85rem;
-    color: rgb(20, 183, 145);
-}
 
-input.form-control::placeholder,
-textarea.form-control::placeholder {
-    color: transparent;
+h2{
+     font-size: larger;
+    font-family: "Nunito", serif;
+    font-weight: bold;
+    background-color: #ccc;
+
+}
+p{
+    font-size: larger;
+    font-family: "Nunito", serif;
+    font-weight: bold;
+    background-color: #ccc;
+}
+.container {
+    padding: 50px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-}
-
-.col-md-6:first-child {
-    background-color: rgba(255, 255, 255, 0.8); 
-    color: #333; 
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.col-md-6:first-child h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.col-md-6:first-child p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.social-icons a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.1);
-    color:rgb(20, 183, 145);
-}
-
-.social-icons img {
-    width: 100%;
-    height: 100%;
-}
-
-.col-md-6:last-child {
-    background-color: rgba(255, 255, 255, 0.8); 
+.col-md-6:first-child {
+    background-color:rgb(20, 183, 145,0.3);
+    color: #333;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    margin-top: 50px;
 }
 
-.col-md-6:last-child h2 {
+.col-md-6 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-
-form .form-label {
-    font-weight: bold;
-    margin-bottom: 10px;
+    background-color:rgb(20, 183, 145);
 }
 
 form .form-control {
@@ -130,16 +77,153 @@ form .form-control:focus {
 }
 
 form .btn {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
+    background: transparent;
+    color: white;
+    border-radius: 56px 2px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid white;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 100%;
 }
 
-form .btn:hover {
-    background-color: rgb(20, 183, 145);
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icons .social-label {
+    font-size: 0.85rem;
+    color: #333;
+    margin-left: 10px;
+}
+
+footer {
+    background: rgb(121, 192, 176);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.8em;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logo-footer {
+    font-size: 0.4em;
+    font-family: "Spectral", serif;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.logo-footer img {
+    max-width: 40%;
+    height: auto;
+}
+
+.subscribe {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.subscribe input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    min-width: 250px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.subscribe button {
+    background: rgb(20, 183, 145);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 56px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid white;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.subscribe button:hover {
+    background: rgb(20, 183, 145, 0.2);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .col-md-6:last-child {
+        margin-left: 0;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .social-icons .social-label {
+        display: none;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
 }
