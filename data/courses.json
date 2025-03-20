@@ -1,0 +1,189 @@
+{
+    "individual": [
+      {
+        "id": 1,
+        "title": "Spanish for Beginners",
+        "description": "If you're taking your first steps in Spanish, this class is for you. You'll learn basic vocabulary, essential phrases, and fundamental grammar structures to communicate in everyday situations simply and effectively.",
+        "image": "beginner.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Intermediate Spanish",
+        "description": "You already have a foundation in Spanish and want to keep progressing. In this class, you'll improve your fluency, expand your vocabulary, and master more complex structures to express yourself with greater confidence in different situations.",
+        "image": "intermediate.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Advanced Spanish",
+        "description": "Take your Spanish to the next level. We will refine your grammar, expand your vocabulary, and work on the accuracy and naturalness of your communication so you can speak like a native in any context.",
+        "image": "advanced.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Spanish for Kids",
+        "description": "Fun and engaging classes designed especially for children. They will learn Spanish through games, songs, and interactive activities, fostering a natural and effective learning experience.",
+        "image": "kids.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Business Spanish",
+        "description": "Enhance your Spanish for professional settings. You'll learn specialized vocabulary, email writing, presentations, and effective communication in meetings, helping you succeed in the business world.",
+        "image": "business.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Spanish for Travel",
+        "description": "Are you traveling to a Spanish-speaking country? In these classes, you'll learn useful phrases, key vocabulary, and essential expressions to confidently navigate airports, hotels, restaurants, and more.",
+        "image": "travel.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Grammar Lesson",
+        "description": "Do you want to strengthen your grammar? In this class, we cover key Spanish rules and structures with clear explanations and practical exercises so you can speak and write with accuracy.",
+        "image": "grammar.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Writing Practice",
+        "description": "Improve your written expression with exercises tailored to your level. From emails to formal or creative texts, we will work on your spelling, grammar, and style to help you write clearly and coherently.",
+        "image": "writing.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Spanish Conversation",
+        "description": "Gain confidence speaking Spanish with conversation-focused classes. You'll practice different topics, improve your pronunciation, and learn to express yourself more fluently in real-life situations.",
+        "image": "conversation.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Spanish Pronunciation",
+        "description": "Perfect your accent and pronounce like a native. In these classes, we will work on intonation, Spanish sounds, and speaking clarity so you can communicate with greater confidence and naturalness.",
+        "image": "pronunciation.jpg"
+      }
+    ],
+    "pair": [
+      {
+        "id": 1,
+        "title": "Spanish for Beginners",
+        "description": "If you're taking your first steps in Spanish, this class is for you. You'll learn basic vocabulary, essential phrases, and fundamental grammar structures to communicate in everyday situations simply and effectively.",
+        "image": "beginner.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Intermediate Spanish",
+        "description": "You already have a foundation in Spanish and want to keep progressing. In this class, you'll improve your fluency, expand your vocabulary, and master more complex structures to express yourself with greater confidence in different situations.",
+        "image": "intermediate.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Advanced Spanish",
+        "description": "Take your Spanish to the next level. We will refine your grammar, expand your vocabulary, and work on the accuracy and naturalness of your communication so you can speak like a native in any context.",
+        "image": "advanced.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Spanish for Kids",
+        "description": "Fun and engaging classes designed especially for children. They will learn Spanish through games, songs, and interactive activities, fostering a natural and effective learning experience.",
+        "image": "kids.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Business Spanish",
+        "description": "Enhance your Spanish for professional settings. You'll learn specialized vocabulary, email writing, presentations, and effective communication in meetings, helping you succeed in the business world.",
+        "image": "business.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Spanish for Travel",
+        "description": "Are you traveling to a Spanish-speaking country? In these classes, you'll learn useful phrases, key vocabulary, and essential expressions to confidently navigate airports, hotels, restaurants, and more.",
+        "image": "travel.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Grammar Lesson",
+        "description": "Do you want to strengthen your grammar? In this class, we cover key Spanish rules and structures with clear explanations and practical exercises so you can speak and write with accuracy.",
+        "image": "grammar.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Writing Practice",
+        "description": "Improve your written expression with exercises tailored to your level. From emails to formal or creative texts, we will work on your spelling, grammar, and style to help you write clearly and coherently.",
+        "image": "writing.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Spanish Conversation",
+        "description": "Gain confidence speaking Spanish with conversation-focused classes. You'll practice different topics, improve your pronunciation, and learn to express yourself more fluently in real-life situations.",
+        "image": "conversation.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Spanish Pronunciation",
+        "description": "Perfect your accent and pronounce like a native. In these classes, we will work on intonation, Spanish sounds, and speaking clarity so you can communicate with greater confidence and naturalness.",
+        "image": "pronunciation.jpg"
+      }
+    ],
+    "group": [
+        {
+          "id": 1,
+          "title": "Spanish for Beginners",
+          "description": "If you're taking your first steps in Spanish, this class is for you. You'll learn basic vocabulary, essential phrases, and fundamental grammar structures to communicate in everyday situations simply and effectively.",
+          "image": "beginner.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Intermediate Spanish",
+          "description": "You already have a foundation in Spanish and want to keep progressing. In this class, you'll improve your fluency, expand your vocabulary, and master more complex structures to express yourself with greater confidence in different situations.",
+          "image": "intermediate.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Advanced Spanish",
+          "description": "Take your Spanish to the next level. We will refine your grammar, expand your vocabulary, and work on the accuracy and naturalness of your communication so you can speak like a native in any context.",
+          "image": "advanced.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Spanish for Kids",
+          "description": "Fun and engaging classes designed especially for children. They will learn Spanish through games, songs, and interactive activities, fostering a natural and effective learning experience.",
+          "image": "kids.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Business Spanish",
+          "description": "Enhance your Spanish for professional settings. You'll learn specialized vocabulary, email writing, presentations, and effective communication in meetings, helping you succeed in the business world.",
+          "image": "business.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Spanish for Travel",
+          "description": "Are you traveling to a Spanish-speaking country? In these classes, you'll learn useful phrases, key vocabulary, and essential expressions to confidently navigate airports, hotels, restaurants, and more.",
+          "image": "travel.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Grammar Lesson",
+          "description": "Do you want to strengthen your grammar? In this class, we cover key Spanish rules and structures with clear explanations and practical exercises so you can speak and write with accuracy.",
+          "image": "grammar.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Writing Practice",
+          "description": "Improve your written expression with exercises tailored to your level. From emails to formal or creative texts, we will work on your spelling, grammar, and style to help you write clearly and coherently.",
+          "image": "writing.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Spanish Conversation",
+          "description": "Gain confidence speaking Spanish with conversation-focused classes. You'll practice different topics, improve your pronunciation, and learn to express yourself more fluently in real-life situations.",
+          "image": "conversation.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Spanish Pronunciation",
+          "description": "Perfect your accent and pronounce like a native. In these classes, we will work on intonation, Spanish sounds, and speaking clarity so you can communicate with greater confidence and naturalness.",
+          "image": "pronunciation.jpg"
+        }
+      ]    
+  }
+  

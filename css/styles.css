@@ -307,7 +307,7 @@ body {
 }
 .course-item {
     background: rgba(0, 200, 153, 0.1);
-    color: black;
+    color: #333;
     border: 3px solid #ddd;
     border-radius: 36px;
     width: 100%;
@@ -326,14 +326,15 @@ h3{
     text-transform:uppercase;
     font-weight:lighter;
     background-color: rgba(255, 255, 255, 0.2);
+    color:#333;
 }
 
 .course-item .btn {
     display: inline-block;
     margin: 20px 0;
     padding: 20px 40px;
-    background-color:rgb(209, 209, 209, 0.4);
-    color: rgb(255, 255, 255);
+    background-color:rgb(20, 183, 145);
+    color: white;
     text-decoration: none;
     border-radius: 56px 2px;
     font-size: 20px;
@@ -346,20 +347,14 @@ h3{
     transform: scale(1.1);
 }
 .course-item .btn:hover {
-    background-color: rgb(20, 183, 145);
-    color:  rgb(255, 255, 255);
+    background-color: rgb(20, 183, 145,0.2);
+    border: 2px solid rgb(20, 183, 145);
+    color: rgb(20, 183, 145);
     transform: scale(1.1);
-    border: 2px solid white;
+
     font-size:smaller;
 }
-.course-item:nth-child(odd) {
-    background-color: rgb(121, 192, 176);
-    color: white;
-}
-.course-item:nth-child(even) {
-    background-color: rgb(20, 183, 145);
-    color: white;
-}
+
 .course-item:hover {
     transform: scale(1.1);
 
