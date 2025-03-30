@@ -207,11 +207,10 @@ body {
 }
 
 .video-container video {
-    width: 100%;
-    height: 10%;
-    object-fit:scale-down;
+    width: 100%; 
+    height: auto; 
+    object-fit: scale-down;
 }
-
 .logo-hero {
     width: 600px;
     height: 600px;
@@ -241,7 +240,7 @@ body {
 
 .subtitle {
     font-family: "Spectral", serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight:lighter;
     color: white;
     margin: 0;
@@ -254,44 +253,42 @@ body {
     display: inline-block;
     margin-top: 3em;
     padding: 20px 40px;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
     color: white;
     text-decoration: none;
     border: 2px solid white;
     border-radius: 56px 3px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight:bold;
     transition: all 0.3s ease-in-out;
     font-family: "Nunito", serif;
     width: 300px;
     text-align: center;
 }
 .hero-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.hero-btn:visited {
-    color: white; 
-    transform: none; 
+    background-color: rgba(255, 255, 255, 0.4);
+    color:#333;
 }
 #courses {
     padding: 0px 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     
 }
 .section-title-home {
-    text-align: center;
-    font-size: 9em;
+    text-align: left;
+    font-size: 6em;
     padding: 0;
-    margin-top:0;
-    margin-bottom: 40px;
+    margin-top:30px;
+    margin-bottom: 60px;
     font-family:  "Spectral", serif;
     color: rgb(20, 183, 145);
 }
 .section-title-courses {
     margin-top: 1em;
-    font-size: 5.5em;
+    font-size: 3em;
     margin-bottom: 1em;
     font-family: "Spectral", serif;
     color: rgb(20, 183, 145);
@@ -299,7 +296,7 @@ body {
 .course-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 80px;
     justify-content: center;
     font-family: "Spectral", serif;
     max-width: 1200px;
@@ -308,7 +305,7 @@ body {
 .course-item {
     background: rgba(0, 200, 153, 0.1);
     color: #333;
-    border: 3px solid #ddd;
+    border: 3px solid rgb(20, 183, 145);;
     border-radius: 36px;
     width: 100%;
     max-width: 450px;
@@ -318,20 +315,19 @@ body {
     font-size: 1.5em;
     font-family: "Nunito", serif;
     gap: 3em;
-    
 } 
 h3{
-    font-family: "Spectral", serif;
+    font-family: "Nunito", serif;
     margin-bottom: 1em;
     text-transform:uppercase;
-    font-weight:lighter;
-    background-color: rgba(255, 255, 255, 0.2);
-    color:#333;
+    font-weight:bold;
+    margin-bottom: 0;
+    color:rgb(20, 183, 145);
 }
 
 .course-item .btn {
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 20px 40px;
     background-color:rgb(20, 183, 145);
     color: white;
@@ -339,7 +335,7 @@ h3{
     border-radius: 56px 2px;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 3em;
+    margin-top: 2em;
     font-family: "Nunito", serif;
 }
 .course-item:hover {
@@ -351,7 +347,6 @@ h3{
     border: 2px solid rgb(20, 183, 145);
     color: rgb(20, 183, 145);
     transform: scale(1.1);
-
     font-size:smaller;
 }
 
