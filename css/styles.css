@@ -226,14 +226,13 @@ body {
     padding: 40px;
     text-align: center;
     font-family: "Spectral", serif;
-    
     margin-top: 3.5em;
     border-radius: 10%;
 }
 .subtitle {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5em;
-    color:#333;
+    font-size: 3em;
+    color:rgb(20, 183, 145);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -280,10 +279,11 @@ body {
 }
 .section-title-courses {
     margin-top: 1em;
-    font-size: 0.2em;
+    font-size:3.5em;
     margin-bottom: 1em;
     font-family: "Spectral", serif;
     color: rgb(20, 183, 145);
+    padding: 1.5em;
 }
 .course-list {
     display: grid;
