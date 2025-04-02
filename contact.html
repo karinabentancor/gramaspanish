@@ -16,22 +16,27 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html"> HOME </a></li>
             <li><a href="courses.html">COURSES</a></li>
-            <li><a href="about.html" >ABOUT</a></li>
-            <li><a href="contact.html" class="active">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html"class="active">CONTACT</a></li>
         </ul>
         <div class="language-selector">
             <div class="dropdown">
-                <a href="#" onclick="changeLanguage('en')">
-                    <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                <a href="#" onclick="toggleDropdown()" class="dropdown-toggle">
+                    <img id="selected-flag" src="https://flagcdn.com/w40/gb.png" alt="English"> <!-- Idioma seleccionado (bandera) -->
                 </a>
-                <a href="#" onclick="changeLanguage('es')">
-                    <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
-                </a>
-                <a href="#" onclick="changeLanguage('ru')">
-                    <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
-                </a>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                    </a>
+                    <a href="#" onclick="changeLanguage('es', 'https://flagcdn.com/w40/es.png')">
+                        <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
+                    </a>
+                    <a href="#" onclick="changeLanguage('ru', 'https://flagcdn.com/w40/ru.png')">
+                        <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
+                    </a>
+                </div>
             </div>
         </div>
     </nav>

@@ -82,7 +82,6 @@
     font-style: italic;
   }
 
-
   * {
     margin: 0;
     padding: 0;
@@ -92,7 +91,7 @@ html {
     font-size: 16px;
 }
 body {
-    font-family:  "Spectral", serif;
+    font-family: "Spectral", serif;
     background-color: #ffffff;
     color: #2f2f2f;
     font-size: 15px;
@@ -102,7 +101,7 @@ body {
     top: 0;
     width: 100%;
     height: 60px;
-    background-color: rgb(20, 183, 145, 0.4);
+    background-color: rgba(20, 183, 145, 0.4);
     backdrop-filter: blur(10px);
     z-index: 500;
     display: flex;
@@ -110,11 +109,21 @@ body {
     justify-content: space-between;
     padding: 0 20px;
 }
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 90px;
+}
 .navbar ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 25px;
     padding: 0;
     margin: 0;
@@ -128,27 +137,28 @@ body {
     font-weight: bold;
     transition: color 0.3s ease;
 }
-.navbar ul li a:hover {
-    color: whitesmoke;
-    font-weight: bolder;
-    background-color: rgb(121, 192, 176);
-}
+.navbar ul li a:hover,
 .navbar ul li a.active {
     color: whitesmoke;
     font-weight: bolder;
     background-color: rgb(121, 192, 176);
 }
-.logo-nav {
-    margin-top: 0;
-    width: 90px;
-    color:#ffffff;
-
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 .language-selector {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 .language-selector .dropdown {
     position: relative;
@@ -160,30 +170,30 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
-    background-color: rgb(121, 192, 176, 0.5);
+    background-color: rgba(121, 192, 176, 0.5);
     border-radius: 15%;
 }
 .language-selector .dropdown-toggle img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    margin-right: 0.5em;
 }
 .language-selector .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: rgb(121, 192, 176, 0.9);
+    background-color: rgba(121, 192, 176, 0.9);
     border-radius: 5px;
     margin-top: 5px;
     padding: 5px;
     z-index: 1000;
+    font-family: "Nunito", serif;
 }
 .language-selector .dropdown-menu a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     color: #2f2f2f;
     font-size: 16px;
@@ -194,6 +204,10 @@ body {
 .language-selector .dropdown:hover .dropdown-menu {
     display: block;
 }
+.language-selector .dropdown-menu img {
+    margin-right: 10px;
+}
+
 .video-container {
     position: relative;
     width: 100%;
@@ -241,7 +255,7 @@ body {
 .hero-btn {
     display: inline-block;
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
     padding: 20px 40px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4px);
@@ -278,9 +292,8 @@ body {
     background-color: rgb(20, 183, 145, 0.4);
 }
 .section-title-courses {
-    margin-top: 1em;
-    font-size:3.5em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-size:5em;
     font-family: "Spectral", serif;
     color: rgb(20, 183, 145);
     padding: 1.5em;
@@ -551,21 +564,26 @@ footer {
 }
 
 
+
 @media (max-width: 768px) {
-    .language-selector .dropdown {
+    .navbar ul {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(20, 183, 145, 0.9);
+        padding: 10px 0;
     }
-
-    .language-selector:hover .dropdown {
-        display: block;
+    .navbar ul.active {
+        display: flex;
     }
-
-    .language-selector .selected-language {
-        display: block;
+    .navbar ul li {
+        text-align: center;
+        padding: 10px 0;
     }
-
-    .language-selector .selected-language img {
-        width: 30px;
-        height: 30px;
+    .hamburger {
+        display: flex;
     }
 }
