@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GЯAMA SPANISH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/course-info.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"> HOME </a></li>
+            <li><a href="courses.html" class="active">COURSES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="language-selector">
+            <div class="dropdown">
+                <a href="#" onclick="toggleDropdown()" class="dropdown-toggle">
+                    <img id="selected-flag" src="https://flagcdn.com/w40/gb.png" alt="English"> <!-- Idioma seleccionado (bandera) -->
+                </a>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="#" onclick="changeLanguage('en', 'https://flagcdn.com/w40/gb.png')">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="English"> English
+                    </a>
+                    <a href="#" onclick="changeLanguage('es', 'https://flagcdn.com/w40/es.png')">
+                        <img src="https://flagcdn.com/w40/es.png" alt="Español"> Español
+                    </a>
+                    <a href="#" onclick="changeLanguage('ru', 'https://flagcdn.com/w40/ru.png')">
+                        <img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Русский
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title-course-info"><h1>Course Spanish</h1>
+            <h2>something to say about this course</h2>
+        </div>
+        <div class="row">
+            <div class="text">
+                <p>In this course.....</p>
+            </div>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="social-icons">
+                        <a href="#" aria-label="Email"><img src="media/svg/envelope.svg" alt="Email"></a>
+                        <a href="#" aria-label="Instagram"><img src="media/svg/instagram.svg" alt="Instagram"></a>
+                        <a href="#" aria-label="Telegram"><img src="media/svg/telegram.svg" alt="Telegram"></a>
+                        <a href="https://wa.me/34603839520" target="_blank" aria-label="WhatsApp"><img src="media/svg/whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                    <div class="right-col">
+                        <div class="logo-footer">
+                            <img src="media/svg/logo-white.svg" alt="Logo">
+                        
+                        <div class="subscribe">
+                            <input type="email" placeholder="Enter your email to stay updated" aria-label="Email input">
+                            <button>Join us</button>
+                        </div>
+                    </div>
+               
+            </footer>
