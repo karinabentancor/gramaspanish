@@ -211,7 +211,7 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     
 }
 .video-container video {
@@ -237,16 +237,17 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     font-family: "Spectral", serif;
-    margin-top: 3.5em;
+    margin-top: 3em;
     border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.2);;
 }
 .subtitle {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3em;
-    color:rgb(20, 183, 145);
+    color:#333;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -293,48 +294,92 @@ body {
 }
 .section-title-courses {
     margin-top: 0.5em;
-    font-size:5em;
+    font-size:3em;
     font-family: "Spectral", serif;
     color: rgb(20, 183, 145);
-    padding: 1.5em;
+    padding: 1em;
 }
 .course-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    font-family: "Spectral", serif;
+    max-width: 100px;
+    margin: auto;
+}
+
+.course-item {
+    background: rgba(0, 200, 153, 0.1);
+    color: #333;
+    border: 3px solid rgb(20, 183, 145);
+    border-radius: 36px;
+    width: 50%;
+    aspect-ratio: 1; 
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: "Nunito", serif;
+}
+
+h3 {
+    font-family: "Nunito", serif;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgb(20, 183, 145);
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
     justify-content: center;
     font-family: "Spectral", serif;
     max-width: 1200px;
     margin: auto;
 }
+
 .course-item {
     background: rgba(0, 200, 153, 0.1);
     color: #333;
     border: 3px solid rgb(20, 183, 145);
     border-radius: 36px;
     width: 100%;
-    max-width: 450px;
+    aspect-ratio: 1;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     font-size: 1.5em;
     font-family: "Nunito", serif;
-    gap: 3em;
-} 
-h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-item svg {
+    width: 30px; 
+    height: auto;
+    margin-bottom: 1em; 
+}   
+
+h3 {
     font-family: "Nunito", serif;
     margin-bottom: 1em;
-    text-transform:uppercase;
-    font-weight:bold;
+    text-transform: uppercase;
+    font-weight: bold;
     margin-bottom: 0;
-    color:rgb(20, 183, 145);
+    color: rgb(20, 183, 145);
 }
 
 .course-item .btn {
     display: inline-block;
     margin: 10px 0;
     padding: 20px 40px;
-    background-color:rgb(20, 183, 145);
+    background-color: rgb(20, 183, 145);
     color: white;
     text-decoration: none;
     border-radius: 56px 2px;
@@ -343,93 +388,18 @@ h3{
     margin-top: 2em;
     font-family: "Nunito", serif;
 }
+
 .course-item:hover {
-    background-color::rgb(209, 209, 209, 0.4);
+    background-color: rgba(255, 233, 251, 0.4);
     transform: scale(1.1);
 }
+
 .course-item .btn:hover {
-    background-color: rgb(20, 183, 145,0.2);
+    background-color: rgba(20, 183, 145, 0.2);
     border: 2px solid rgb(20, 183, 145);
-    color: rgb(20, 183, 145);
+    color: rgb(177, 177, 177);
     transform: scale(1.1);
-    font-size:smaller;
 }
-
-.course-item:hover {
-    transform: scale(1.1);
-
-}
-.swiper-container {
-    width: 100%;
-    margin: 20px 0;
-    overflow: hidden;
-}
-
-.swiper-wrapper {
-    display: flex;
-    width: 100%;
-}
-
-.swiper-slide {
-    width: 100%;
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0;
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: #20b791;
-    font-size: 2rem;
-    transition: color 0.3s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    color: #ffffff;
-}
-
-.swiper-pagination-bullet {
-    background-color: #20b791;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #ffffff;
-}
-
-.testimonial-photo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    margin: 1em;
-}
-
-.testimonial-name {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: rgb(20, 183, 145);
-}
-
-.testimonial-text {
-    font-size: 1.5rem;
-    color: #333;
-    padding: 20px;
-    font-family: "Spectral", serif;
-}
-
 .free-trial-class {
     display: flex;
     flex-direction: column;
