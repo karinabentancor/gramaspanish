@@ -1,0 +1,126 @@
+
+#courses {
+    padding: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    
+}
+.section-title-home {
+    text-align: left;
+    font-size: 6em;
+    padding: 0;
+    margin-top:30px;
+    margin-bottom: 60px;
+    font-family:  "Spectral", serif;
+    color: #333;
+    background-color: rgb(20, 183, 145, 0.4);
+}
+.section-title-courses {
+    margin-top: 0.5em;
+    font-size:3em;
+    font-family: "Spectral", serif;
+    color: rgb(20, 183, 145);
+    padding: 1em;
+}
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    font-family: "Spectral", serif;
+    max-width: 100px;
+    margin: auto;
+}
+
+.course-item {
+    background: rgba(0, 200, 153, 0.1);
+    color: #333;
+    border: 3px solid rgb(20, 183, 145);
+    border-radius: 36px;
+    width: 50%;
+    aspect-ratio: 1; 
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: "Nunito", serif;
+}
+
+h3 {
+    font-family: "Nunito", serif;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgb(183, 20, 115);
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    font-family: "Spectral", serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.course-item {
+    background: rgba(0, 200, 153, 0.1);
+    color: #333;
+    border: 3px solid rgb(20, 183, 145);
+    border-radius: 36px;
+    width: 100%;
+    aspect-ratio: 1;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-family: "Nunito", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-item svg {
+    width: 30px; 
+    height: auto;
+    margin-bottom: 1em; 
+}   
+
+h3 {
+    font-family: "Nunito", serif;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgb(20, 183, 145);
+}
+
+.course-item .btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px 40px;
+    background-color: rgb(20, 183, 145);
+    color: white;
+    text-decoration: none;
+    border-radius: 56px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2em;
+    font-family: "Nunito", serif;
+}
+
+.course-item:hover {
+    background-color: rgba(255, 233, 251, 0.4);
+    transform: scale(1.1);
+}
+
+.course-item .btn:hover {
+    background-color: rgba(20, 183, 145, 0.2);
+    border: 2px solid rgb(20, 183, 145);
+    color: rgb(177, 177, 177);
+    transform: scale(1.1);
+}
