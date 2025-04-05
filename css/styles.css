@@ -3,85 +3,76 @@
     font-weight: 200;
     font-style: normal;
   }
-  
   .spectral-light {
     font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
   }
-  
+
   .spectral-regular {
     font-family: "Spectral", serif;
     font-weight: 400;
     font-style: normal;
   }
-  
+
   .spectral-medium {
     font-family: "Spectral", serif;
     font-weight: 500;
     font-style: normal;
   }
-  
+
   .spectral-semibold {
     font-family: "Spectral", serif;
     font-weight: 600;
     font-style: normal;
   }
-  
+
   .spectral-bold {
     font-family: "Spectral", serif;
     font-weight: 700;
     font-style: normal;
   }
-  
+
   .spectral-extrabold {
     font-family: "Spectral", serif;
     font-weight: 800;
     font-style: normal;
   }
-  
   .spectral-extralight-italic {
     font-family: "Spectral", serif;
     font-weight: 200;
     font-style: italic;
   }
-  
   .spectral-light-italic {
     font-family: "Spectral", serif;
     font-weight: 300;
     font-style: italic;
   }
-  
   .spectral-regular-italic {
     font-family: "Spectral", serif;
     font-weight: 400;
     font-style: italic;
   }
-  
   .spectral-medium-italic {
     font-family: "Spectral", serif;
     font-weight: 500;
     font-style: italic;
   }
-  
   .spectral-semibold-italic {
     font-family: "Spectral", serif;
     font-weight: 600;
     font-style: italic;
   }
-  
   .spectral-bold-italic {
     font-family: "Spectral", serif;
     font-weight: 700;
     font-style: italic;
   }
-  
   .spectral-extrabold-italic {
     font-family: "Spectral", serif;
     font-weight: 800;
     font-style: italic;
   }
-
   * {
     margin: 0;
     padding: 0;
@@ -218,6 +209,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 3em;
 }
 .logo-hero {
     width: 600px;
@@ -300,18 +292,18 @@ body {
     justify-content: center;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 2em;
 }
-
 .course-home {
     background: rgba(0, 200, 153, 0.1);
     color: #333;
     border: 3px solid rgb(20, 183, 145);
     border-radius: 20px;
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1; 
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     font-size: 1em;
     font-family: "Nunito", sans-serif;
     display: flex;
@@ -319,32 +311,28 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
 .course-home img {
-    max-width: 90%; 
+    max-width: 70%; 
     height: auto;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 }
-
 .course-home h3 {
     font-family: "Nunito", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(20, 183, 145);
     margin-bottom: 10px;
 }
-
 .course-home p {
-    font-size: 0.9em;
+    font-size: 1em;
     padding: 0 10px;
 }
-
 .course-home .btn {
     display: inline-block;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 20px 40px;
     background-color: rgb(20, 183, 145);
     color: white;
@@ -396,13 +384,14 @@ h3 {
 
 .course-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     justify-content: center;
     font-family: "Spectral", serif;
-    max-width: 1200px;
+    max-width: 600px; 
     margin: auto;
 }
+
 
 .course-item {
     background: rgba(0, 200, 153, 0.1);
@@ -413,8 +402,8 @@ h3 {
     aspect-ratio: 1;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
-    padding: 20px;
-    font-size: 1.5em;
+    padding: 5px;
+    font-size: 1em;
     font-family: "Nunito", serif;
     display: flex;
     flex-direction: column;
@@ -462,48 +451,50 @@ h3 {
     color: rgb(177, 177, 177);
     transform: scale(1.1);
 }
-.free-trial-class {
+
+.trial-container {
     display: flex;
-    flex-direction: column;
+    justify-content: last baseline;
     align-items: center;
-    justify-content: center;
-    margin-top: 0;
-    background: rgb(20, 183, 145);
-    color: #ffffff;
-    padding: 30px 30px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-decoration: none;
-    font-size: 2.5em;
-    font-weight: bold;
-    font-family: "Nunito", serif;
-}
-
-.btn-schedule {
-    background: white;
-    color: #5e5e5e;
-    padding: 20px 40px;
-    border-radius: 56px 2px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 1em 0;
-    border: 3px solid white;
-    font-family: "Nunito", serif;
-}
-
-.btn-schedule:hover {
-    background: rgb(20, 183, 145);
+    flex-wrap: wrap; 
+    gap: 7em;
+    padding: 1.5em;
+    margin-bottom: 4em;
+    background-color: rgb(20, 183, 145);
+  }
+  
+  .free-trial-class h4 {
+    font-size: 3em;
+    font-family: Nunito, serif;
     color: white;
+    margin: 0;
+  }
+  
+  .btn-schedule {
+    padding: 15px 30px;
+    background-color: rgb(20, 183, 145);
+    color: white;
+    text-decoration: none;
     border: 3px solid white;
-}
+    border-radius: 56px 3px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", serif;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-schedule:hover {
+    background-color: rgba(20, 183, 145, 0.2);
+    color: #333;
+  }
+  
 footer {
     background: rgb(121, 192, 176);
     padding: 6px;
     display: flex;
     justify-content: flex-start;
-
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 .footer-container {
@@ -537,23 +528,24 @@ footer {
 .right-col {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-end;
     flex-grow: 1;
     width: 100%;
     justify-content: flex-end;
+    gap: 20px; 
 }
 
 .logo-footer {
-    font-size: 0.5em;
+    font-size: 1.2em;
     font-family: "Spectral", serif;
     color: white;
-    text-align: right;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 0;
     order: -1;
 }
 
 .logo-footer img {
-    max-width: 40%;
+    max-width: 250px; 
     height: auto;
 }
 
