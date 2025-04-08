@@ -258,6 +258,7 @@ body {
     font-family: "Nunito", serif;
     width: 300px;
     text-align: center;
+    letter-spacing: 1px;
 }
 .hero-btn:hover {
     background-color: rgba(255, 255, 255, 0.4);
@@ -434,6 +435,7 @@ h3 {
     font-weight: bold;
     margin-top: 2em;
     font-family: "Nunito", serif;
+    letter-spacing: 2px;
 }
 
 .course-item:hover {
@@ -446,6 +448,7 @@ h3 {
     border: 2px solid rgb(20, 183, 145);
     color: rgb(177, 177, 177);
     transform: scale(1.1);
+    letter-spacing: 2px;
 }
 
 .trial-container {
@@ -478,6 +481,7 @@ h3 {
     font-family: "Nunito", serif;
     backdrop-filter: blur(4px);
     transition: all 0.3s ease-in-out;
+    letter-spacing: 2px;
   }
 
   .btn-schedule:hover {
@@ -487,7 +491,7 @@ h3 {
   
 footer {
     background: rgb(121, 192, 176);
-    padding: 4px;
+    padding: 0.5em;
     display: flex;
     justify-content: flex-start;
     font-size: 2em;
@@ -530,17 +534,18 @@ footer {
     gap: 20px; 
 }
 .logo-footer {
-    font-size: 1.2em;
+    font-size: 0.5em;
     font-family: "Spectral", serif;
     color: white;
-    text-align: left;
+    text-align: right;
     margin-bottom: 0;
     order: -1;
 }
 .logo-footer img {
-    max-width: 250px; 
+    max-width: 300px; 
     height: auto;
     margin-bottom: 0;
+    align-items: right;
 }
 .subscribe {
     display: flex;
@@ -548,7 +553,7 @@ footer {
     font-size: 14px;
     margin-top: 0;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 100%;
 }
 
@@ -556,36 +561,43 @@ footer {
     padding: 15px;
     border: none;
     border-radius: 5px;
-    min-width: 250px;
+    min-width: 300px;
     font-size: 14px;
-    width: 200px;
+    width: 250px;
     background-color: rgb(20, 183, 145);
     color:white;
     margin-top: 0;
     margin-right: 1em;
+    letter-spacing: 1px;
 }
 input::placeholder {
     color: rgb(237, 235, 235);
     text-align: center;
+    font-family: "Nunito", sans serif;
+    letter-spacing: 1px;
   }
   
 .subscribe button {
-    background: rgb(255, 255, 255,0.2);
+    background: rgb(20, 183, 145, 0.2);
     color: white;
     padding: 15px 30px;
     border-radius: 56px 2px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    border: 3px solid white;
+    border: 3px solid rgba(20, 183, 145);
     cursor: pointer;
     white-space: nowrap;
     display: inline-block;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 2px;
 }
 
 .subscribe button:hover {
-    background: rgb(20, 183, 145, 0.2);
-    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    color:  white;
+    border: 3px solid white;
+    
 }
 
 
