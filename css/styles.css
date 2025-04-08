@@ -450,23 +450,37 @@ h3 {
     transform: scale(1.1);
     letter-spacing: 2px;
 }
-
 .trial-container {
     display: flex;
     justify-content: last baseline;
     align-items: center;
-    flex-wrap: wrap; 
-    gap: 7em;
+    flex-wrap: wrap;
+    gap: 3em;
     padding: 1.5em;
     margin-bottom: 4em;
     background-color: rgb(20, 183, 145);
   }
   
+  .free-trial-class {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
   .free-trial-class h4 {
-    font-size: 3em;
+    display: inline-block;
+    animation: scroll-text 20s linear infinite;
+    letter-spacing: 2px;
+    font-size: 4em;
     font-family: Nunito, serif;
     color: white;
     margin: 0;
+  }
+  
+  @keyframes scroll-text {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
   }
   
   .btn-schedule {
@@ -482,11 +496,13 @@ h3 {
     backdrop-filter: blur(4px);
     transition: all 0.3s ease-in-out;
     letter-spacing: 2px;
+    margin: 0 auto;
   }
-
+  
   .btn-schedule:hover {
     background-color: rgba(20, 183, 145, 0.2);
-    color: #333;
+    color: white;
+    transform: scale(1.1);
   }
   
 footer {
