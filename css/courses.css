@@ -1,68 +1,206 @@
-
-#courses {
-    padding: 2.5em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    
+.spectral {
+    font-family: "Spectral", serif;
 }
+.spectral-extralight {
+    font-weight: 200;
+}
+.spectral-light {
+    font-weight: 300;
+}
+.spectral-regular {
+    font-weight: 400;
+}
+.spectral-medium {
+    font-weight: 500;
+}
+.spectral-semibold {
+    font-weight: 600;
+}
+.spectral-bold {
+    font-weight: 700;
+}
+.spectral-extrabold {
+    font-weight: 800;
+}
+.spectral-italic {
+    font-style: italic;
+}
+.spectral-extralight-italic {
+    font-weight: 200;
+    font-style: italic;
+}
+.spectral-light-italic {
+    font-weight: 300;
+    font-style: italic;
+}
+.spectral-regular-italic {
+    font-weight: 400;
+    font-style: italic;
+}
+.spectral-medium-italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.spectral-semibold-italic {
+    font-weight: 600;
+    font-style: italic;
+}
+.spectral-bold-italic {
+    font-weight: 700;
+    font-style: italic;
+}
+.spectral-extrabold-italic {
+    font-weight: 800;
+    font-style: italic;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Spectral", serif;
+    background-color: #ffffff;
+    color: #2f2f2f;
+    font-size: 15px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(20, 183, 145, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", serif;
+}
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Nunito", serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: whitesmoke;
+    font-weight: bolder;
+    background-color: rgb(121, 192, 176);
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.language-selector {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.language-selector .dropdown {
+    position: relative;
+}
+.language-selector .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: rgba(121, 192, 176, 0.5);
+    border-radius: 15%;
+}
+.language-selector .dropdown-toggle img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.language-selector .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(121, 192, 176, 0.9);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    z-index: 1000;
+    font-family: "Nunito", serif;
+}
+.language-selector .dropdown-menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 16px;
+}
+.language-selector .dropdown-menu a:hover {
+    background-color: rgb(121, 192, 176);
+}
+.language-selector .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.language-selector .dropdown-menu img {
+    margin-right: 10px;
+}
+
 .section-title-home {
     text-align: left;
     font-size: 6em;
     padding: 0;
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 60px;
-    font-family:  "Spectral", serif;
+    font-family: "Spectral", serif;
     color: #333;
     background-color: rgb(20, 183, 145, 0.4);
 }
+
 .section-title-courses {
     margin-top: 0.5em;
-    font-size:3em;
+    font-size: 3em;
     font-family: "Spectral", serif;
     color: rgb(20, 183, 145);
     padding: 1em;
 }
-.course-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    font-family: "Spectral", serif;
-    max-width: 100px;
-    margin: auto;
-}
-
-.course-item {
-    background: rgba(0, 200, 153, 0.1);
-    color: #333;
-    border: 3px solid rgb(20, 183, 145);
-    border-radius: 36px;
-    width: 50%;
-    aspect-ratio: 1; 
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5em;
-    font-family: "Nunito", serif;
-}
-
-h3 {
-    font-family: "Nunito", serif;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0;
-    color: rgb(183, 20, 115);
-}
 
 .course-list {
+    padding:4em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 40px;
     justify-content: center;
     font-family: "Spectral", serif;
-    max-width: 1200px;
+    max-width: 300%;
     margin: auto;
 }
 
@@ -72,24 +210,39 @@ h3 {
     border: 3px solid rgb(20, 183, 145);
     border-radius: 36px;
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1.5;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: "Nunito", serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.course-item:nth-child(odd) {
+    background-color: rgba(0, 200, 153, 0.1);
 }
 
+.course-item:nth-child(even) {
+    background-color:  rgb(121, 192, 176);
+}
+.course-item img {
+    width: 100%;
+   
+    object-fit: contain;
+    max-height: 100%;
+    margin-bottom: 0.5em;
+}
 .course-item svg {
-    width: 30px; 
+    width: 30px;
     height: auto;
-    margin-bottom: 1em; 
-}   
-
+    margin-bottom: 1em;
+}
 h3 {
     font-family: "Nunito", serif;
     margin-bottom: 1em;
@@ -98,7 +251,6 @@ h3 {
     margin-bottom: 0;
     color: rgb(20, 183, 145);
 }
-
 .course-item .btn {
     display: inline-block;
     margin: 10px 0;
@@ -107,20 +259,106 @@ h3 {
     color: white;
     text-decoration: none;
     border-radius: 56px 2px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 2em;
     font-family: "Nunito", serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .course-item:hover {
     background-color: rgba(255, 233, 251, 0.4);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-
 .course-item .btn:hover {
     background-color: rgba(20, 183, 145, 0.2);
     border: 2px solid rgb(20, 183, 145);
     color: rgb(177, 177, 177);
     transform: scale(1.1);
+}
+footer {
+    background: rgb(121, 192, 176);
+    padding: 6px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2em;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+    filter: invert(1);
+}
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+.right-col {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 20px; 
+}
+.logo-footer {
+    font-size: 1.2em;
+    font-family: "Spectral", serif;
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+    order: -1;
+}
+.logo-footer img {
+    max-width: 250px; 
+    height: auto;
+}
+.subscribe {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.subscribe input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    min-width: 250px;
+    font-size: 14px;
+    width: 200px;
+}
+.subscribe button {
+    background: rgb(20, 183, 145);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 56px 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid white;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+}
+.subscribe button:hover {
+    background: rgb(20, 183, 145, 0.2);
+    color: white;
 }
