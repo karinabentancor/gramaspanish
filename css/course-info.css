@@ -1,3 +1,27 @@
-.container{
+body{
     margin-top: 6em;
+}        
+.row {
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.row-1 { background-color: rgb(170, 170, 170,0.3); }
+.row-2 { background-color: rgb(20, 183, 145, 0.3);}
+.row-3 { background-color: rgb(255, 193, 225,0.3); }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.opciones button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgb(20, 183, 145);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.opciones button:hover {
+  background-color: rgb(18, 150, 130);
 }
