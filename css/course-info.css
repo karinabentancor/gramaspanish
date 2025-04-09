@@ -1,13 +1,24 @@
-body{
-    margin-top: 6em;
-}        
+body {
+  margin-top: 10vh;
+}
 .row {
   padding: 2rem;
   margin-bottom: 1rem;
 }
-.row-1 { background-color: rgb(170, 170, 170,0.3); }
-.row-2 { background-color: rgb(20, 183, 145, 0.3);}
-.row-3 { background-color: rgb(255, 193, 225,0.3); }
+.row-1 { 
+  background-color: #eecbec;
+}
+.row-2 { 
+  background-color: rgb(20, 183, 145, 0.3); 
+}
+.row-3 { 
+  background-color: rgb(20, 183, 145);
+  color:white;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -25,28 +36,106 @@ body{
 .opciones button:hover {
   background-color: rgb(18, 150, 130);
 }
-
-.btn-choose-class{
+.btn-choose-class {
   display: inline-block;
   margin-top: 1.5em;
   margin-bottom: 2.5em;
   padding: 20px 40px;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
-  color:  white;
+  color: white;
   text-decoration: none;
   border: 2px solid white;
   border-radius: 56px 3px;
   font-size: 22px;
-  font-weight:bold;
+  font-weight: bold;
   transition: all 0.3s ease-in-out;
   font-family: "Nunito", serif;
   width: 300px;
   text-align: center;
 }
-.class-options{
-  background-color:rgb(18, 150, 130, 0.3);
-  padding: 4em;
+.btn-choose-class:hover {
+  background-color: rgb(20, 183, 145);
+  border-color: rgb(20, 183, 145);
+}
+.class-options {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: rgb(20, 183, 145, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 4em;
-  align-items: center;
+}
+.class-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 25%;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.class-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+.class-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+.class-item p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+.btn-choose-class {
+  padding: 0.8rem 2rem;
+  background-color: rgb(20, 183, 145);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+.btn-choose-class:hover {
+  background-color: rgb(18, 150, 130);
+  transform: scale(1.05);
+}
+.packs-section {
+  background-color: #eecbec;
+  padding: 5rem 0;
+}
+.pack-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: rgb(18, 150, 130,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color:#fff;
+}
+.pack-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.pack-card .card-body {
+  padding: 2rem;
+  color: #fff;
+}
+.pack-card .card-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.pack-card .card-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #eecbec;
+  margin-bottom: 1.5rem;
 }
