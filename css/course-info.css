@@ -93,18 +93,20 @@ body {
   margin-bottom: 1.5rem;
 }
 .btn-choose-class {
-  padding: 0.8rem 2rem;
+  padding: 15px 30px;
   background-color: rgb(20, 183, 145);
   color: white;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.1rem;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 56px 3px;
+  font-size: 18px;
   font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  width: 100%;
-  text-align: center;
+  font-family: "Nunito", serif;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
 }
+
 .btn-choose-class:hover {
   background-color: rgb(18, 150, 130);
   transform: scale(1.05);
