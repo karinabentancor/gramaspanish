@@ -618,8 +618,6 @@ input::placeholder {
     
 }
 
-
-
 @media (max-width: 768px) {
     .navbar ul {
         display: none;

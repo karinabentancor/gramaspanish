@@ -275,6 +275,58 @@ h3 {
     color: rgb(177, 177, 177);
     transform: scale(1.1);
 }
+
+.trial-container {
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding:3em;
+    margin-bottom: 4em;
+    background-color: rgb(116, 116, 116,0.2);;
+    width: 100%;
+  }
+  
+  .free-trial-class {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 60%;
+  }
+  
+  .free-trial-class h4 {
+    display: inline-block;
+    animation: scroll-text 20s linear infinite;
+    letter-spacing: 2px;
+    font-size: 4em;
+    font-family: Nunito, serif;
+    color: rgb(20, 183, 145);
+    margin: 0;
+    margin-left: 0.5em;
+  }
+  
+  .btn-schedule {
+    padding: 15px 30px;
+    background-color: none;
+    color: rgb(20, 183, 145);
+    text-decoration: none;
+    border: 3px solid rgb(20, 183, 145);
+    border-radius: 56px 3px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", serif;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 2px;
+    margin-left: 0;
+    
+  }
+  .btn-schedule:hover {
+    background-color: rgba(20, 183, 145, 0.4);
+    color: white;
+    transform: scale(1.1);
+  }
 footer {
     background: rgb(121, 192, 176);
     padding: 0.5em;
