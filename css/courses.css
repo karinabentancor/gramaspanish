@@ -184,7 +184,6 @@ body {
     color: #333;
     background-color: rgb(20, 183, 145, 0.4);
 }
-
 .section-title-courses {
     margin-top: 0.5em;
     margin-bottom: 0;
@@ -193,7 +192,6 @@ body {
     color: rgb(20, 183, 145);
     padding: 1em;
 }
-
 .course-list {
     padding:3em;
     display: grid;
@@ -203,9 +201,10 @@ body {
     font-family: "Spectral", serif;
     max-width: 300%;
     margin: auto;
+    aspect-ratio: 1.5;
 }
-
 .course-item {
+    font-size: 1.2em; 
     background: rgba(230, 230, 230, 0.1);
     color: #333;
     border: 3px solid rgb(20, 183, 145);
@@ -215,7 +214,6 @@ body {
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
     padding: 20px;
-    font-size: 1.2em;
     font-family: "Nunito", serif;
     display: flex;
     flex-direction: column;
