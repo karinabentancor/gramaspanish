@@ -456,7 +456,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     gap: 3em;
-    padding: 1.5em;
+    padding: 2em;
     margin-bottom: 4em;
     background-color: rgb(20, 183, 145);
   }
@@ -465,7 +465,8 @@ h3 {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    width: 100%;
+    width: 80%;
+    color: #333;
   }
   
   .free-trial-class h4 {
@@ -478,10 +479,10 @@ h3 {
     margin: 0;
   }
   
-  @keyframes scroll-text {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-  }
+.h1{
+    color:rgb(121, 192, 176);
+    font-size:0.5em;
+}
   
   .btn-schedule {
     padding: 15px 30px;
@@ -496,7 +497,8 @@ h3 {
     backdrop-filter: blur(4px);
     transition: all 0.3s ease-in-out;
     letter-spacing: 2px;
-    margin: 0 auto;
+    margin-left: 0;
+    
   }
   
   .btn-schedule:hover {
