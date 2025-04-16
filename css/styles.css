@@ -379,11 +379,11 @@ h3 {
 
 .course-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
     font-family: "Spectral", serif;
-    max-width: 600px; 
+    max-width: 500px; 
     margin: auto;
 }
 
