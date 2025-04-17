@@ -2,12 +2,11 @@ body {
     font-family: 'Raleway', sans-serif;
     color: #333;
     background-image: url('https://raw.githubusercontent.com/karinabentancor/gramaspanish/master/media/img/contact.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100%;
+    background-attachment:scroll;
     background-repeat: no-repeat;
     position: relative;
 }
-
 body::after {
     content: "";
     position: absolute;
