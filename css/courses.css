@@ -8,25 +8,16 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 main {
     flex: 1;
 }
 
-
-
 #courses {
-    padding: 2em;
+    padding: 1.5em;
+    
 }
 
-.section-title-courses {
-    font-size: 2.5em;
-    text-align: center;
-    color: #14b791;
-    margin-bottom: 2em;
-}
-
-.course-list {
+.course-list2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
@@ -34,76 +25,91 @@ main {
     max-width: 1200px; 
     margin: auto;
 }
-
 .course-item {
     background-color: rgba(238, 167, 210, 0.1);
     border: 2px solid #14b791;
     border-radius: 10px;
-    padding: 15px;
+    padding: 0 25px 15px 15px;
     text-align: center;
     transition: transform 0.3s ease;
     max-width: 350px;
-    margin: 0 auto;
-}
-
+    margin: 2em;
+    overflow: hidden; 
+  }
+  
+ 
 .course-item:hover {
     transform: scale(1.05);
 }
-
 .course-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-height: 150px;
+    width: 90%;
+    max-height: 110px;
     object-fit: cover;
-}
-
+    display: block;
+    vertical-align: top;
+    border-radius: 0;
+    margin-top: 0;
+  }
 .course-item h3 {
     color: #14b791;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 1em 0;
 }
-
 .course-item p {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #555;
 }
-
-.course-item .btn {
+.btn-courses{
     display: inline-block;
-    background-color: #14b791;
+    margin-top: 1.5em;
+    margin-bottom: 5em;
+    padding: 10px 20px;
+    background-color: rgb(20, 183, 145);
     color: white;
-    padding: 8px 15px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1em;
-}
-
-.course-item .btn:hover {
-    background-color: #11a67b;
-}
-
-.trial-container {
+    border: 2px solid rgb(20, 183, 145);
+    border-radius: 56px 3px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-family: "Nunito", serif;
+    width: 180px;
     text-align: center;
+    letter-spacing: 1px;
+}
+.course-item .btn-courses:hover {
+    background-color: rgb(20, 183, 145, 0.1);
+    color:rgb(20, 183, 145);
+    border: 2px solid rgb(20, 183, 145);
+}
+.trial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 3em;
-}
+    padding: 0 2em; 
+    flex-wrap: wrap;
+    gap: 1em;
+  }
 
-.free-trial-class h4 {
-    font-size: 1.5em;
-    color: #14b791;
-}
-
-.btn-schedule {
-    display: inline-block;
+  .trial-text {
+    font-size: 4em;
+    color: white;
+    margin-left: 0.5em;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 5px;
+  }
+  .btn-schedule {
     background-color: #14b791;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1em;
-}
-
-.btn-schedule:hover {
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 0;
+    margin-right: 3em; 
+  }
+  .btn-schedule:hover {
     background-color: #11a67b;
-}
-
+  }
