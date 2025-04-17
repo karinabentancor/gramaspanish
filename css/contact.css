@@ -1,7 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #333;
-    background-image: url('https://raw.githubusercontent.com/karinabentancor/gramaspanish/master/media/img/contact2.jpg');
+    background-image: url('https://raw.githubusercontent.com/karinabentancor/gramaspanish/master/media/img/contact.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -18,14 +18,11 @@ body::after {
     filter: blur(50px);
     z-index: -1;
 }
-
-
 h2{
      font-size: larger;
     font-family: "Nunito", serif;
     font-weight: bold;
     background-color: #ccc;
-
 }
 p{
     font-size: larger;
