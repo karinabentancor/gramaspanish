@@ -11,12 +11,17 @@ body {
 main {
     flex: 1;
 }
-
+.section-title-courses {
+  margin-top: 0.5em;
+  font-size:5em;
+  font-family: "Spectral", serif;
+  color: rgb(20, 183, 145);
+  padding: 0.8em;
+}
 #courses {
     padding: 1.5em;
     
 }
-
 .course-list2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,8 +41,6 @@ main {
     margin: 2em;
     overflow: hidden; 
   }
-  
- 
 .course-item:hover {
     transform: scale(1.05);
 }

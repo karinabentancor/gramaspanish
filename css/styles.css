@@ -270,28 +270,33 @@ body {
     font-size: 6em;
     padding: 0;
     margin-top:30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-family:  "Spectral", serif;
     color: #333;
     background-color: rgb(20, 183, 145, 0.4);
 }
-.section-title-courses {
-    margin-top: 0.5em;
-    font-size:3em;
-    font-family: "Spectral", serif;
-    color: rgb(20, 183, 145);
-    padding: 1em;
-}
-.course-list{
-    align-items: stretch;
-}
+#courses {
+    padding: 2em 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1em 1em;
+    max-width: 800px;
+    margin: 0;
+    align-items: start;
+  }
+  
   .course-home {
     background: rgba(238, 167, 210, 0.1);
     color: #333;
     border: 3px solid rgb(20, 183, 145);
     border-radius: 20px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     aspect-ratio: 1;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
@@ -301,8 +306,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block: 1em;
-    margin-right: 2.5em;
+    margin: 1em;
+    aspect-ratio: 1;    
 }
 
 .course-home img {
@@ -321,12 +326,12 @@ body {
 }
 .course-home p {
     font-size: 1.2em;
-    padding: 0 10px;
-    text-align: justify;
+    padding: 0 5px;
+    text-align: center;
 }
 .course-home .btn {
     display: inline-block;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
     padding: 10px 20px;
     background-color: rgb(20, 183, 145);
@@ -349,8 +354,9 @@ body {
 }
 .course-home img {
     width: 80%;
-    height: 200px; 
+    height: 150px; 
     object-fit: contain;
+    padding:0;
 }
 .course-item {
     background: rgba(0, 200, 153, 0.1);
@@ -374,13 +380,12 @@ h3 {
     color: rgb(20, 183, 145);
 }
 .course-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    justify-content: center;
-    font-family: "Spectral", serif;
-    max-width: 500px; 
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .course-item {
     background: rgba(0, 200, 153, 0.1);
@@ -391,7 +396,7 @@ h3 {
     aspect-ratio: 1;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     text-align: center;
-    padding: 5px;
+    padding: 2px;
     font-size: 1em;
     font-family: "Nunito", serif;
     display: flex;
