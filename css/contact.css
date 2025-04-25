@@ -28,8 +28,11 @@ p {
     font-family: "Nunito", serif;
     font-weight: bold;
     font-size: larger;
-    color: #ccc;
-    font-size: 2em;
+    color: white;
+    font-size: 1.5em;
+    align-self: center;
+    margin:0;
+    padding:0;
 }
 .container {
     padding: 50px 15px;
@@ -41,11 +44,35 @@ p {
 }
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 60px;
     margin-top: 100px;
 }
+.get-in-touch {
+    position: relative;
+}
+
+.get-in-touch .btn-small {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.footer-links li:last-child a {
+    white-space: nowrap;
+}
+
 .contact-info,
 .get-in-touch {
     background-color: rgba(20, 183, 145, 0.6);
@@ -70,17 +97,48 @@ p {
     text-transform: uppercase;
     letter-spacing: 2px;
     justify-content: center;
+}.contact-info .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.contact-info .social-icons .icon-item a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.contact-info .social-icons .icon-item img {
+    flex-shrink: 0;
+}
+
+
+
+.contact-info .social-icons .icon-item a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+.contact-info .social-icons .icon-item span {
+    text-decoration: none;
 }
 .social-icons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 0px;
+    margin-top: 30px;
 }
 .icon-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 .icon-item img {
     width: 20px;
@@ -88,7 +146,7 @@ p {
 }
 .icon-item span {
     font-size: 0.8em;
-    color:#333;
+     color:#333;
     background-color: rgba(255, 255, 255, 0.7);
     font-weight: bold;
     letter-spacing: 2px;
@@ -151,17 +209,21 @@ textarea:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 .btn-small {
-    background: transparent;
+    background-color: rgb(255, 255, 255,0.4);
     color: white;
     border-radius: 56px 2px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border: 2px solid white;
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 8px 32px;
     width: auto;
     align-self: right;
+    font-family: "Nunito", sans-serif;
+}
+.btn-small:hover{
+    color:#333;
 }
 footer {
     background: rgb(121, 192, 176);
@@ -187,7 +249,8 @@ footer {
 .footer-links {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1em;
+    margin-left: 0;
     font-family: "Nunito", sans-serif;
 }
 .footer-links a {
