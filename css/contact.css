@@ -6,7 +6,6 @@ body {
     background-attachment: scroll;
     background-repeat: no-repeat;
     position: relative;
-    
 }
 body, h2, p, .footer-links, .logo-footer {
     font-family: "Nunito", sans-serif;
@@ -21,7 +20,9 @@ body::after {
     filter: blur(50px);
     z-index: -1;
 }
-
+h2 {
+    align-self: center;
+}
 h2,
 p {
     font-family: "Nunito", serif;
@@ -30,7 +31,6 @@ p {
     color: #ccc;
     font-size: 2em;
 }
-
 .container {
     padding: 50px 15px;
     max-width: 1000px;
@@ -88,11 +88,11 @@ p {
 }
 .icon-item span {
     font-size: 0.8em;
-     color:#333;
+    color:#333;
+    background-color: rgba(255, 255, 255, 0.7);
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background-color: #ccc;
 }
 form .form-control {
     border: 1px solid #ccc;
@@ -106,7 +106,6 @@ form .form-control {
     font-weight: bold;
     font-family: "Nunito", sans-serif;
 }
-
 form .form-control:focus {
     border-color: #333;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -115,7 +114,6 @@ form .form-control:focus {
     position: relative;
     margin-bottom: 1.5rem;
 }
-
 .form-outline .form-label {
     position: absolute;
     top: 16px;
@@ -127,7 +125,6 @@ form .form-control:focus {
     pointer-events: none;
     transition: all 0.2s ease-in-out;
 }
-
 .form-control {
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid #ccc;
@@ -139,7 +136,6 @@ form .form-control:focus {
     font-weight: bold;
     font-family: "Nunito", sans-serif;
 }
-
 .form-control:focus + .form-label,
 .form-control:not(:placeholder-shown) + .form-label {
     top: -10px;
@@ -154,7 +150,6 @@ textarea:-webkit-autofill {
     font-weight: bold;
     transition: background-color 5000s ease-in-out 0s;
 }
-
 .btn-small {
     background: transparent;
     color: white;
@@ -165,8 +160,8 @@ textarea:-webkit-autofill {
     border: 2px solid white;
     cursor: pointer;
     padding: 8px 16px;
-    display: inline-block;
     width: auto;
+    align-self: right;
 }
 footer {
     background: rgb(121, 192, 176);
@@ -216,7 +211,6 @@ footer {
     align-items: flex-start;
     width: 100%;
 }
-
 .logo-footer {
     font-size: 0.4em;
     font-family: "Nunito", sans-serif;
@@ -228,7 +222,6 @@ footer {
     max-width: 40%;
     height: auto;
 }
-
 .subscribe {
     display: flex;
     gap: 15px;
