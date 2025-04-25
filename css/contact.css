@@ -37,6 +37,7 @@ p {
     margin: 0 auto;
     font-family: "Nunito", sans-serif;
     font-size: 1em;
+    align-self: center;
 }
 .row {
     display: flex;
@@ -68,6 +69,7 @@ p {
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+    justify-content: center;
 }
 .social-icons {
     display: flex;
